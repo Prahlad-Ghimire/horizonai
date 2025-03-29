@@ -1,0 +1,43 @@
+.sidebar{
+    min-height: 100vh !important;
+    background-color: #f0f4f9 !important;
+    padding: 25px 20px !important;
+}
+.sidebar img{
+    width: 25px !important;
+}
+.sidebar .menu{
+    margin-left: 10px !important;
+    cursor: pointer !important;
+}
+.sidebar .newchat{
+    margin-top: 30px !important;
+    padding: 10px 15px !important;
+    background-color: #e6eaf1 !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+}
+.recent .title{
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+}
+.recent .recententry{
+    padding: 10px !important;
+    padding-right: 40px !important;
+    cursor: pointer !important;
+}
+.recent .recententry:hover{
+    background-color: #e2e6eb !important;
+}
+.bottom .recententry{
+    padding: 10px !important;
+    padding-right: 40px !important;
+    cursor: pointer !important;
+}
+.bottom .recententry:hover{
+    background-color: #e2e6eb !important;
+}
+.bottom .bottom-items{
+    padding-right: 10px !important;
+    cursor: pointer !important;
+}
