@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "@fontsource/roboto": "^5.2.5",
+    "@google/genai": "^0.7.0",
+    "@google/generative-ai": "^0.24.0",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
+    "mime-types": "^3.0.1",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0"
