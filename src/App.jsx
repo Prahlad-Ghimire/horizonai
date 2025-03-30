@@ -1,12 +1,13 @@
 import React from 'react'
 import Sidebar from './components/sidebar/sidebar';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fontsource/roboto';
+import Mainpage from './components/Main/Mainpage';
+
 
 const App = () => {
   return (
     <>
       <Sidebar />
+      <Mainpage />
     </>
   )
 }
