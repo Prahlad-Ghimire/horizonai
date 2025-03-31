@@ -117,3 +117,26 @@
     flex-direction: column;
     gap: 10px;
 }
+.loader hr{
+    border-radius: 4px;
+    border: none;
+    background-color: #F2EFE7;
+    background: linear-gradient(to right, #F2EFE7 #ffffff #F2EFE7);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: justify;
+}
