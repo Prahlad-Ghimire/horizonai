@@ -3,7 +3,11 @@ import runChat from "../config/horizonai";
 
 export const Context = createContext();
 
-const ContextProvider = (props) =>{
+const delayPara = (index) => {
+
+}
+
+const ContextProvider = (props) => {
 
     const [input, setInput] = useState("");
     const [recentPrompt, setRecentPrompt] = useState("");
@@ -19,8 +23,23 @@ const ContextProvider = (props) =>{
         setLoading(true)
         setShowResult(true)
         setRecentPrompt(input)
-        const response =  await runChat(input)
-        setResultData(response)
+        const response = await runChat(input)
+        
+        let responseArray = response.split("**");
+        let newResponse = "" ;
+        for(let i =0; i <responseArray.length; i++){
+            if(i%2===0){
+                newResponse += responseArray[i];
+            }
+            else{
+                newResponse += "<b>"+responseArray[i]+"</b>";
+            }
+        }
+
+        let newResponsetwo = newResponse.split("*").join("<br>");
+
+        setResultData(newResponsetwo);
+
         setLoading(false)
         setInput("")
     }
@@ -39,7 +58,7 @@ const ContextProvider = (props) =>{
         setInput
     }
 
-    return(
+    return (
         <Context.Provider value={contextValue}>
             {props.children}
         </Context.Provider>

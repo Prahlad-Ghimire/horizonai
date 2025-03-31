@@ -55,7 +55,7 @@ const Mainpage = () => {
               </div>
               :<p></p>
               }
-              <p className='textaling'>{resultData}</p>
+              <p dangerouslySetInnerHTML={{__html:resultData}}></p>
             </div>
           </div>
           }
