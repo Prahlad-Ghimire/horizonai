@@ -7,6 +7,15 @@
 }
 #root{
   min-height: 100vh !important;
+  animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 body{
   margin: 0;

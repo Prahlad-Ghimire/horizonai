@@ -140,3 +140,21 @@
     line-height: 1.8;
     text-align: justify;
 }
+@media (max-width:600px){
+    .mainbottom input{
+        flex: none;
+        width: 150px;
+    }
+    .mainbottom img{
+            width: 20px;
+    }
+    .boxsearch{
+        padding: 5px 10px;
+    }
+    .boxsearch div{
+        gap: 5px;
+    }
+    .mainpage .horizoncard{
+        margin-bottom: 50px;
+    }
+}
