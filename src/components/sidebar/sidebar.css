@@ -2,6 +2,9 @@
     min-height: 100vh !important;
     padding: 20px 15px !important;
     background-color: #F1EFEC !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .sidebar img{
     width: 23px;
@@ -22,6 +25,9 @@
     margin-top: 25px !important;
     margin-bottom: 15px !important;
 }
+.sidebar .recent{
+    animation: fadeIn 1.5s;
+}
 .sidebar .recententry{
     padding: 12px !important;
     padding-right: 30px !important;
@@ -34,4 +40,9 @@
 .sidebar .bottomitems{
     padding-right: 10px !important;
     cursor: pointer !important;
+}
+@media (max-width:600px){
+    .sidebar{
+        display: none !important;
+    }
 }
